@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quatermaster's Stores</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="generate()">
+    <div class="full-line">
+        <div>
+            <span>There</span>
+            <span id="word"></span>
+        </div>
+        <div class="line-container">
+            <span class="line" id="line"></span>,
+        </div>
+        <div>in the stores, in the stores</div>
+    </div>
+    <button class="generate" onclick="generate()">Generate</button>
+</body>
+
+<script>
+
+    const LINES = [["where", "rats, rats, as big as bloomin' cats"],
+    ["was", "gravy, gravy, enough to sink the Navy"],
+    ["where", "beans, beans, big as submarines"],
+    ["was", "cheese, cheese, that smelled smelled like sailors knees"],
+    ["where", "peas, peas, with kilts and hairy knees"],
+    ["where", "snakes, snakes, as big as garden rakes"],
+    ["where", "goats, goats, eating all the oats"]
+    ];
+
+    let PREVIOUS;
+    function getRandomInt(amount_posible) {
+        return Math.floor(Math.random() * amount_posible);
+    }
+    function getLine(line_number) {
+        return LINES[line_number];
+    }
+    function getRandomLine() {
+        let line_number = getRandomInt(7);
+        while (line_number == PREVIOUS) {
+            line_number = getRandomInt(7);
+        }
+        PREVIOUS = line_number;
+        let line = getLine(line_number);
+        return line;
+    }
+
+    function generate() {
+        line = getRandomLine()
+        document.getElementById("word").innerHTML = line[0];
+        document.getElementById("line").innerHTML = line[1];
+    }
+
+
+
+
+</script>
+
+</html>
