@@ -5,7 +5,8 @@ const LINES = [["where", "rats, rats, as big as bloomin' cats"],
 ["was", "cheese, cheese, that smelled like sailors knees"],
 ["where", "peas, peas, with kilts and hairy knees"],
 ["where", "snakes, snakes, as big as garden rakes"],
-["where", "goats, goats, eating all the oats"]
+["where", "goats, goats, eating all the oats"],
+["where", "chips, chips, as big as battleships"]
 ];
 
 let PREVIOUS;
@@ -16,9 +17,9 @@ function getLine(line_number) {
     return LINES[line_number];
 }
 function getRandomLine() {
-    let line_number = getRandomInt(7);
+    let line_number = getRandomInt(LINES.length);
     while (line_number == PREVIOUS) {
-        line_number = getRandomInt(7);
+        line_number = getRandomInt(LINES.length);
     }
     PREVIOUS = line_number;
     let line = getLine(line_number);
