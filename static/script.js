@@ -1,9 +1,5 @@
 const LINES = [
-<<<<<<< HEAD
   ["were", "rats, rats, as big as bloomin' cats"],
-=======
-  ["where", "rats, rats, as big as bloomin' cats"],
->>>>>>> 5d7215c6e39a3975e485c69a766632e1d706d86f
   ["was", "gravy, gravy, enough to sink the Navy"],
   ["were", "beans, beans, big as submarines"],
   ["was", "cheese, cheese, that smelled like sailors knees"],
