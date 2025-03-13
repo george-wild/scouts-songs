@@ -1,5 +1,7 @@
-# quatermasters-store
+# scouts-songs
+A website with many common songs sung by scouts.
 
-Generate a random line (currently one of eight) that fits into the popular Quatermaster's Store campfire song!
+## Songs
+ - Quatermaster's Store
 
-A [copy is live on my website](https://www.georgewild.dev/quatermasters-store).
+A [copy is live on my website](https://scouts-songs.georgewild.dev/).
