@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quatermaster's Stores</title>
+    <title>Quartermaster's Store | Scouts Songs</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="static/style.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <!-- Script -->
+    <script src="/static/script.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,21 +19,29 @@
       rel="stylesheet"
     />
   </head>
-
-  <body>
+  <body onload="updateLine('quartermasters-store')">
     <header>
       <h1>Scouts Songs</h1>
+      <a href="/">Home</a>
     </header>
+
     <main>
-      <div>
-        <h2>Songs</h2>
-        <ul>
-          <li>
-            <a href="/songs/quartermasters-store/">Quartermaster's Store</a>
-          </li>
-        </ul>
+      <h2>Quartermaster's Store</h2>
+      <div class="line-wrapper">
+        <div>
+          <span>There</span>
+          <span id="fore_word"></span>
+        </div>
+        <span id="dynamic_lyric"></span>
+        <span>in the stores, in the stores.</span>
+        <span id="previous_line" style="display: none"></span>
       </div>
+
+      <button onclick="updateLine('quartermasters-store')" type="button">
+        Generate
+      </button>
     </main>
+
     <footer>
       <span>
         © <span id="year">2025</span>
