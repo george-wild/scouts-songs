@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quartermaster's Store | Scouts Songs</title>
+    <title>Song | Scouts Songs</title>
 
     <!-- Style -->
     <link rel="stylesheet" href="/static/style.css" />
@@ -19,27 +19,21 @@
       rel="stylesheet"
     />
   </head>
-  <body onload="updateLine('quartermasters-store')">
+  <body onload="setupSong()">
     <header>
       <h1>Scouts Songs</h1>
       <a href="/">Home</a>
     </header>
 
-    <main>
-      <h2>Quartermaster's Store</h2>
-      <div class="line-wrapper">
-        <div>
-          <span>There</span>
-          <span id="fore_word"></span>
-        </div>
-        <span id="dynamic_lyric"></span>
-        <span>in the stores, in the stores.</span>
-        <span id="previous_line" style="display: none"></span>
+    <main id="main" style="visibility: hidden">
+      <h2 id="song_title"></h2>
+      <div id="line_wrapper">
+        <span id="fore_lyric"></span>
+        <span id="dynamic_lyric" prev_line=""></span>
+        <span id="post_lyric"></span>
       </div>
 
-      <button onclick="updateLine('quartermasters-store')" type="button">
-        Generate
-      </button>
+      <button onclick="updateLyric()" type="button">Generate</button>
     </main>
 
     <footer>
