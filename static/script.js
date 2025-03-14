@@ -68,7 +68,6 @@ function updateLyric() {
       lyric_set = SONGS.quartermasters_store.lyric_set;
       line_number = getRandomInt(lyric_set.length);
 
-      console.debug(dynamic_lyric.getAttribute("prev_line"));
       while (line_number == dynamic_lyric.getAttribute("prev_line")) {
         line_number = getRandomInt(lyric_set.length);
       }
@@ -84,7 +83,6 @@ function updateLyric() {
       lyric_set = SONGS.never_get_to_heaven.lyric_set;
       line_number = getRandomInt(lyric_set.length);
 
-      console.debug(dynamic_lyric.getAttribute("prev_line"));
       while (line_number == dynamic_lyric.getAttribute("prev_line")) {
         line_number = getRandomInt(lyric_set.length);
       }
