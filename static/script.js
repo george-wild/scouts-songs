@@ -16,7 +16,7 @@ SONGS = {
       ["in Akela's car", "Akela's car won't, drive that far"],
       ["in a jumbo-jet", "the Lord ain't got, no runways yet"],
       ["in a biscuit tin", "the Lord don't let, any crummy ones in"],
-      ["on a Boy Scout's knee", "a Boy Scout's knee, is to wobbly"],
+      ["on a Boy Scout's knee", "a Boy Scout's knee, is too wobbly"],
       ["in a Girl Guide's bra", "a Girl Guide's bra, won't stretch that far"],
       ["in a baked bean tin", "a baked bean tin, has baked beans in"],
       ["on roller skates", "you might roll past, thoes pearly gates"],
