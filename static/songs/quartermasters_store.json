@@ -1,0 +1,61 @@
+{
+  "song_id": "quartermasters_store",
+  "song_title": "The Quartermaster's Store",
+
+  "lyric_constructor": [
+    {
+      "style": "static",
+      "lyrics": ["static.fore_lyric", "dynamic.verb"]
+    },
+    {
+      "style": "dynamic",
+      "lyrics": ["dynamic.main_lyric", "static.comma"]
+    },
+    {
+      "style": "static",
+      "lyrics": ["static.post_lyric"]
+    }
+  ],
+
+  "components": {
+    "static": {
+      "fore_lyric": "There ",
+      "post_lyric": "in the stores, in the stores.",
+      "comma": ","
+    },
+    "dynamic": [
+      {
+        "verb": "were",
+        "main_lyric": "rats, rats, as big as bloomin' cats"
+      },
+      {
+        "verb": "was",
+        "main_lyric": "gravy, gravy, enough to sink the navy"
+      },
+      {
+        "verb": "were",
+        "main_lyric": "beans, beans, big as submarines"
+      },
+      {
+        "verb": "was",
+        "main_lyric": "cheese, cheese, that smelled like sailors knees"
+      },
+      {
+        "verb": "were",
+        "main_lyric": "peas, peas, with kilts and hairy knees"
+      },
+      {
+        "verb": "were",
+        "main_lyric": "snakes, snakes, as big as garden rakes"
+      },
+      {
+        "verb": "were",
+        "main_lyric": "goats, goats, eating all the oats"
+      },
+      {
+        "verb": "were",
+        "main_lyric": "chips, chips, as big as battleships"
+      }
+    ]
+  }
+}

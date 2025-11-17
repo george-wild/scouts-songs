@@ -1,0 +1,79 @@
+{
+  "song_id": "never_get_to_heaven",
+  "song_title": "You'll Never Get to Heaven",
+
+  "lyric_constructor": [
+    {
+      "style": "static",
+      "lyrics": ["static.fore_lyric"]
+    },
+    {
+      "style": "dynamic",
+      "lyrics": ["dynamic.object", "static.comma"]
+    },
+    {
+      "style": "static",
+      "lyrics": ["static.because"]
+    },
+    {
+      "style": "dynamic",
+      "lyrics": ["static.space", "dynamic.reason", "static.stop"]
+    }
+  ],
+
+  "components": {
+    "static": {
+      "fore_lyric": "Oh, you'll never get to heaven, ",
+      "because": "because",
+      "space": " ",
+      "comma": ",",
+      "stop": "."
+    },
+    "dynamic": [
+      {
+        "object": "in Akela's car",
+        "reason": "Akela's car, won't drive that far"
+      },
+      {
+        "object": "in a jumbo-jet",
+        "reason": "the Lord ain't got, no runways yet"
+      },
+      {
+        "object": "in a biscuit tin",
+        "reason": "the Lord don't let, any crummy ones in"
+      },
+      {
+        "object": "on a Boy Scout's knee",
+        "reason": "a Boy Scout's knee, is too wobbly"
+      },
+      {
+        "object": "in a Girl Guide's bra",
+        "reason": "a Girl Guide's bra, won't stretch that far"
+      },
+      {
+        "object": "in a baked bean tin",
+        "reason": "a baked bean tin, has baked beans in"
+      },
+      {
+        "object": "on roller skates",
+        "reason": "you might roll past, those pearly gates"
+      },
+      {
+        "object": "on water skis",
+        "reason": "the Lord don't allow, any hairy knees"
+      },
+      {
+        "object": "in a bottle of gin",
+        "reason": "the Lord don't let, any spirits in"
+      },
+      {
+        "object": "in dirty jeans",
+        "reason": "the Lord ain't got, any washing machines"
+      },
+      {
+        "object": "in a Sea Scout's boat",
+        "reason": "a Sea Scout's boat, won't stay afloat"
+      }
+    ]
+  }
+}

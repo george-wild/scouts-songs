@@ -7,6 +7,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="static/style.css" />
+    <script src="/static/home-script.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,25 +18,14 @@
     />
   </head>
 
-  <body>
+  <body onload="populateSongs('song_list')">
     <header>
       <h1>Scouts Songs</h1>
     </header>
     <main>
       <div>
         <h2>Songs</h2>
-        <ul>
-          <li>
-            <a href="/song/?song_name=quartermasters-store"
-              >Quartermaster's Store</a
-            >
-          </li>
-          <li>
-            <a href="/song/?song_name=never-get-to-heaven"
-              >You'll never get to heaven</a
-            >
-          </li>
-        </ul>
+        <ul id="song_list"></ul>
       </div>
     </main>
     <footer>

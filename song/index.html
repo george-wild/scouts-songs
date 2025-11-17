@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/static/style.css" />
 
     <!-- Script -->
-    <script src="/static/script.js"></script>
+    <script src="/static/song-script.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,11 +27,7 @@
 
     <main id="main" style="visibility: hidden">
       <h2 id="song_title"></h2>
-      <div id="line_wrapper">
-        <span id="fore_lyric"></span>
-        <span id="dynamic_lyric" prev_line=""></span>
-        <span id="post_lyric"></span>
-      </div>
+      <div id="line_wrapper"></div>
 
       <button onclick="updateLyric()" type="button">Generate</button>
     </main>
