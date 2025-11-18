@@ -2,6 +2,8 @@
   "song_id": "never_get_to_heaven",
   "song_title": "You'll Never Get to Heaven",
 
+  "button_mode": "random",
+
   "lyric_constructor": [
     {
       "style": "static",

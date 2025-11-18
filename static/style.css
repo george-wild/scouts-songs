@@ -78,6 +78,25 @@ button {
     outline-offset: 4px;
     outline: 4px dotted green;
   }
+
+  &:disabled {
+    opacity: 50%;
+    pointer-events: none;
+  }
+}
+
+#buttons_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  & button {
+    flex-grow: 1;
+    max-width: 250px;
+    min-width: 50%;
+  }
 }
 
 #line_wrapper {
@@ -116,8 +135,22 @@ button {
   }
 }
 
+@media screen and (min-width: 400px) {
+  #buttons_wrapper {
+    width: 250px;
+    flex-direction: row;
+    & button {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (min-width: 800px) {
   main {
     font-size: 1.25em;
+  }
+  #buttons_wrapper {
+    width: 100%;
+    flex-direction: row;
   }
 }

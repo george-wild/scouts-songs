@@ -1,0 +1,46 @@
+{
+  "song_id": "kum_ba_yah",
+  "song_title": "Kum Ba Yah",
+
+  "button_mode": "sequence",
+
+  "lyric_constructor": [
+    {
+      "style": "dynamic",
+      "lyrics": ["dynamic.action", "static.line_end"]
+    },
+    {
+      "style": "dynamic",
+      "lyrics": ["dynamic.action", "static.line_end"]
+    },
+    {
+      "style": "dynamic",
+      "lyrics": ["dynamic.action", "static.line_end"]
+    },
+    {
+      "style": "static",
+      "lyrics": ["static.post_lyric"]
+    }
+  ],
+
+  "components": {
+    "static": {
+      "line_end": ", kum ba yah!",
+      "post_lyric": "O Lord, kum ba yah!"
+    },
+    "dynamic": [
+      {
+        "action": "Kum ba yah, my Lord"
+      },
+      {
+        "action": "Someone's crying, Lord"
+      },
+      {
+        "action": "Someone's singing, Lord"
+      },
+      {
+        "action": "Someone's praying, Lord"
+      }
+    ]
+  }
+}

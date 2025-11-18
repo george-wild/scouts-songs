@@ -2,6 +2,8 @@
   "song_id": "quartermasters_store",
   "song_title": "The Quartermaster's Store",
 
+  "button_mode": "random",
+
   "lyric_constructor": [
     {
       "style": "static",
